@@ -60,6 +60,7 @@ td {
 
 .main-content {
     padding: 0 20px;
+    border: 1px solid red;
 }
 
 p {
