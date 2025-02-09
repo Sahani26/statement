@@ -17,13 +17,13 @@ table {
 th,
 td {
     
-    padding: 8px 1px;
+    padding: 6px 1px;
    
 }
-/* table {
+ .header-table {
     border-collapse: separate;
-    border-spacing: 10px;  
-}  */
+    /* border-spacing: 10px;   */
+} 
  
 .table-heade th {
     background-color: #e6e6e6;
@@ -158,18 +158,7 @@ td.table-deposits,td.table-withdrawals,td.table-withdrawals {
 td.table-balance {
     text-align: end;
 }
-th.table-date {
-    width: 8%;
-}
-th.table-modes,th.table-deposits{
-    width: 15%;
-}
-th.table-withdrawals{
-    width: 17%; 
-}
-th.table-balance{
-    width: 12%; 
-}
+ 
 tbody#table-body {
     font-size: 10px;
 }
@@ -189,43 +178,51 @@ ul{
     margin-top: 10px;
 }   
 li.table-date{
-    width: 10%;
+ 
     padding: 7px;
-}li.table-modes {
-    width: 14%;
-}li.table-deposits,li.table-balance{
-    width: 15%;
-
 }
-li.table-withdrawals{
-    width: 17%;
-}
-li.table-particulars{
-    width: 25%;
-}ul.ul-header li {
+ 
+ul.ul-header li {
     padding: 5px 0;
     font-weight: 600;
     font-size:10px;
 }
-thead.head-main{
+/* thead.head-main{
     display: none;
-}
-li.table-particulars{
-    width: 32%;
-}
-/* width */
-td.table-date{
-    width: 12%;
-}
-td.table-modes{
-    width: 12%; 
-}
-td.table-deposits,td.table-balance{
-    width: 15%;
-}
-td.table-withdrawals{
-    width: 15%;
-}
+} */
+ 
 td.table-particulars{
-    width: 31%;
+  
+    padding: 8px 5px;
+}
+tr.table-header.table-heade{
+    padding: 5px 0;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+/* width */
+.table-date {
+   
+    width: 10%;
+    text-align: left;
+}.table-modes {
+ 
+    width: 12%;
+    text-align: left;
+}
+.table-balance,.table-deposits {
+ 
+    width: 13%;
+    text-align: right;
+}
+.table-withdrawals {
+  
+    width: 14%;
+    text-align: right;
+}
+.table-particulars {
+   
+    width: 38%;
+    text-align: left;
 }

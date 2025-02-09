@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaction Table</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href="./print.css"> -->
+    <link rel="stylesheet" href="./print.css">
 </head>
 
 <body>
@@ -97,7 +97,7 @@
     
    <!-- data table -->
     <div class="data-area">
-        <table>
+        <table class="header-table">
             <thead class="head-main">
              
                     <tr class="table-header table-heade">
@@ -109,7 +109,10 @@
                         <th class="table-balance">BALANCE</th>
                     </tr>
             </thead>
-            <div class="table-head">
+            <tbody id="table-body">
+            </tbody>
+        </table>
+            <!-- <div class="table-head">
                 <ul class="ul-header">
                     <li class="table-date">DATE</li>
                     <li class="table-modes">MODE</li>
@@ -119,10 +122,11 @@
                     <li class="table-balance">BALANCE</li>
                   
                 </ul>
-            </div>
+            </div> -->
+            <!-- <table>
             <tbody id="table-body">
-            </tbody>
-        </table>
+            </tbody></table> -->
+     
     </div>
 </div>
     <script>
@@ -130,7 +134,7 @@
         {
   "date": "2025-02-01",
   "mode": "Cash",
-  "particulars": "UPI/sunilsahani4843/Payment from Ph/AXIS BANK/014084051569/AXL72f00f63f6414e8caa212ca274dd2679",
+  "particulars": "UPI/sunils ",
   "deposits": 2000,
   "withdrawals": 0,
   "balance": 2000
