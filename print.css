@@ -1,13 +1,9 @@
 @media print {
-    .sub-header-right,.summary{
-        display: block !important;
-      }
+ 
    
 }
 @media (max-width:600px) {
-    .sub-header-right,.summary{
-        display: none !important;
-      }
+    
     
     body {
         font-family: Arial, sans-serif;
