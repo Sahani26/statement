@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Table</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main_header">
+            <div class="logo">
+                <img src="./assets/IBN_BIG.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- sub-header -->
+     <div class="main-content">
+    <header>
+        <div class="sub-header">
+            <div class="sub-header-left">
+                <div class="left-top">
+                    <p>019324/51925690-44346/1-2/RESGS/02-03</p>
+                </div>
+                <div class="left-bottom">
+                    <strong>MR.SUNIL SAHANI</strong>
+                    <p>B106,TAPTI GANGA SMC,.,APARTMENTADAJANNEAR,</p>
+                    <p>PAL HELTH,CENTER
+                    </p>
+                    <p>SURAT</p>
+                    <p>GUJARAT - INDIA - 395009</p>
+                </div>
+            </div>
+            <div class="sub-header-right">
+                <div class="right-top">
+                    <p>Your Base Branch : SURAT - ADAJAN BRANCH</p>
+                    <p>ICICI BANK LTD., SHOP NO. 1 & 4, GREEN
+                    </p>
+                    <p>ELLINA, ANAND MAHAL ROAD, ADAJAN,
+                    </p>
+                    <p>395009
+                    </p>
+                </div>
+                <div class="right-bottom">
+                    <div class="right-visit">
+                        <img src="./assets/phone.png" alt="alt">
+                        <p class="visit-img">Visit www.icicibank.com</p>
+                    </div>
+                    <div class="right-call">
+                        <img src="./assets/phone.png" alt="alt">
+                        <p class="call-bank">Dial your Bank 1800 1080</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="naver-share">
+            <p>Never share your OTP, URN, CVV or passwords with anyone, even if the person claims to be a Bank employee.</p>
+        </div>
+        <div class="statemet-summery">
+            <p>STATEMENT SUMMARY for Customer ID : XXXXX2808 as on January 31, 2025</p>
+            <p class="ac-details">ACCOUNT DETAILS - INR
+            </p>
+        </div>
+        <div class="ac-summery">
+            <div class="account-type"><p>ACCOUNT TYPE</p></div>
+            <div class="account-balance">  <p>ACCOUNT BALANCE (I)</p> </div>
+            <div class="nomonation"><p>NOMINATION</p></div>
+        </div>
+        <div class="ac-summery ac-summery-report">
+            <div class="account-type"><p>Savings A/c XXXXXXXX5457</p></div>
+            <div class="account-balance">  <p>151.95 </p> </div>
+            <div class="nomonation"><p>Not Registered</p></div>
+        </div>
+        <!-- total -->
+         <div class="total-area">
+            <div class="total-head">
+                <p>TOTAL</p>
+            </div>
+            <div class="total-ammount">
+                <p>1234.4   </p>
+            </div>
+         </div>
+         <!-- note -->
+          <div class="note-area">
+            <p>Note: Amount available for withdrawal from Operative Account includes Savings/Current Account Balance and principal amount of Linked Fixed Deposits.</p>
+          </div>
+          <!-- statement -->
+           <div class="statement">
+            <strong>Statement of Transactions in Savings Account XXXXXXXX5457 in INR for the period January 01, 2025 - January 31, 2025
+            </strong>
+           </div>
+    </header>
+    
+   <!-- data table -->
+    <div class="data-area">
+        <table>
+            <thead class="head-main">
+             
+                    <tr class="table-header table-heade">
+                        <th class="table-date">DATE</th>
+                        <th class="table-modes">MODE</th>
+                        <th class="table-particulars">PARTICULARS</th>
+                        <th class="table-deposits">DEPOSITS</th>
+                        <th class="table-withdrawals">WITHDRAWALS</th>
+                        <th class="table-balance">BALANCE</th>
+                    </tr>
+            </thead>
+            <div class="table-head">
+                <ul class="ul-header">
+                    <li class="table-date">DATE</li>
+                    <li class="table-modes">MODE</li>
+                    <li class="table-particulars">PARTICULARS</li>
+                    <li class="table-deposits">DEPOSITS</li>
+                    <li class="table-withdrawals">WITHDRAWALS</li>
+                    <li class="table-balance">BALANCE</li>
+                  
+                </ul>
+            </div>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script>
+        const transactions = [
+        {
+  "date": "2025-02-01",
+  "mode": "Cash",
+  "particulars": "UPI/sunilsahani4843/Payment from Ph/AXIS BANK/014084051569/AXL72f00f63f6414e8caa212ca274dd2679",
+  "deposits": 2000,
+  "withdrawals": 0,
+  "balance": 2000
+}
+,
+            { date: "2025-02-03", mode: "Bank Transfer", particulars: "Rent Payment", deposits: 0, withdrawals: 800, balance: 1200 },
+            { date: "2025-02-05", mode: "UPI", particulars: "Grocery", deposits: 0, withdrawals: 150, balance: 1050 },
+            { date: "2025-02-10", mode: "Cash", particulars: "Freelance Income", deposits: 500, withdrawals: 0, balance: 1550 }
+        ];
+
+        function loadTableData() {
+            const tableBody = document.getElementById("table-body");
+            transactions.forEach(tran => {
+                let row = `<tr class="table-heade-content">
+                    <td class="table-date">${tran.date}</td>
+                    <td class="table-modes">${tran.mode}</td>
+                    <td class="table-particulars">${tran.particulars}</td>
+                    <td class="table-deposits">${tran.deposits}</td>
+                    <td class="table-withdrawals">${tran.withdrawals}</td>
+                    <td class="table-balance">${tran.balance}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        window.onload = loadTableData;
+    </script>
+</body>
+
+</html>

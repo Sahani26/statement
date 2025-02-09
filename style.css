@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    
+    padding: 8px;
+   
+}
+/* table {
+    border-collapse: separate;
+    border-spacing: 10px;  
+}  */
+ 
+.table-heade th {
+    background-color: #e6e6e6;
+}
+.table-heade-content{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.main_header {
+    background: linear-gradient(180deg, #f37e20 0, #ee4611 100%);
+    padding: 7px 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 200px;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.naver-share {
+    background: #e6e6e6;
+    padding: 20px 10px;
+    margin-top: 5px;
+}
+
+.main-content {
+    padding: 0 20px;
+}
+
+p {
+    font-size: 11px;
+}
+
+.naver-share p {
+    font-weight: 600;
+}
+
+.left-bottom strong {
+    font-size: 11px;
+}
+
+.left-bottom {
+    margin-top: 30px;
+}
+
+.right-call,
+.right-visit {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.right-call img,
+.right-visit img {
+    width: 11px;
+}
+
+.right-bottom {
+    background-color: #e6e6e6;
+    padding: 10px 5px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 8px;
+}
+
+.statemet-summery {
+    margin-top: 5px;
+}
+
+.statemet-summery .ac-details {
+    margin-top: 15px;
+}
+
+.ac-summery>div {
+    background-color: #e6e6e6;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.ac-summery {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    column-gap: 5px;
+    margin-top: 5px;
+}.account-balance {
+    text-align: end;
+}.nomonation {
+    text-align: center;
+}.ac-summery-report>div {
+    background-color: transparent;
+    padding: 6px;
+    font-weight: 500;
+}.total-area {
+    display: flex
+;
+    background-color: #e6e6e6;
+    padding: 5px;
+    font-weight: 600;
+    justify-content: space-between;
+}.total-area>div {
+    width: 50%;
+}.total-ammount{
+    text-align: center;
+}.note-area {
+    margin: 15px 0;
+}
+
+.statement {
+    font-size: 13px;
+    margin-left: 5px;
+}td.table-date,td.table-mode,td.table-modes {
+    text-align: start !important;
+}   
+td.table-deposits,td.table-withdrawals,td.table-withdrawals {
+    text-align: end;
+}
+td.table-balance {
+    text-align: end;
+}
+th.table-date {
+    width: 8%;
+}
+th.table-modes,th.table-deposits{
+    width: 15%;
+}
+th.table-withdrawals{
+    width: 17%; 
+}
+th.table-balance{
+    width: 12%; 
+}
+tbody#table-body {
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+}
+.ul-header{
+    display: flex;
+ 
+    column-gap: 10px;
+}
+.ul-header li{
+    background-color:#e6e6e6;
+}.table-head {
+    width: 98.5%;
+    margin: auto;
+}   
+li.table-date{
+    width: 7%;
+    padding: 7px;
+}li.table-modes {
+    width: 14%;
+}li.table-deposits,li.table-balance{
+    width: 15%;
+
+}
+li.table-withdrawals{
+    width: 17%;
+}
+li.table-particulars{
+    width: 32%;
+}ul.ul-header li {
+    padding: 7px;
+    font-weight: 600;
+    font-size:13px;
+}
+thead.head-main{
+    display: none;
+}
