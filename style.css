@@ -228,3 +228,11 @@ tr.table-header.table-heade{
     width: 35%;
     text-align: left;
 }
+.line{
+    position: absolute;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+}
+tbody#table-body{
+    position: relative;
+}
