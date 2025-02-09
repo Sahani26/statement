@@ -4,3 +4,236 @@
         padding: 8px 5px;
     }
 }
+@media (max-width:600px) {
+    body {
+        font-family: Arial, sans-serif;
+     
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th,
+    td {
+        
+        padding: 6px 1px;
+       
+    }
+     .header-table {
+        border-collapse: separate;
+        /* border-spacing: 10px;   */
+    } 
+     
+    .table-heade th {
+        background-color: #e6e6e6;
+    }
+    .table-heade-content{
+        border-bottom: 1px solid #e6e6e6;
+    }
+    
+    .main_header {
+        background: linear-gradient(180deg, #f37e20 0, #ee4611 100%);
+        padding: 7px 0;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo {
+        width: 200px;
+    }
+    
+    .sub-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .naver-share {
+        background: #e6e6e6;
+        padding: 20px 10px;
+        margin-top: 5px;
+    }
+    
+    .main-content {
+       
+        padding-left: 15px;
+        padding-right: 2px;
+    }
+    
+    p {
+        font-size: 11px;
+    }
+    
+    .naver-share p {
+        font-weight: 600;
+    }
+    
+    .left-bottom strong {
+        font-size: 11px;
+    }
+    .statement strong{
+        font-size: 11px;
+    }
+    .left-bottom {
+        margin-top: 30px;
+    }
+    
+    .right-call,
+    .right-visit {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+    }
+    
+    .right-call img,
+    .right-visit img {
+        width: 11px;
+    }
+    
+    .right-bottom {
+        background-color: #e6e6e6;
+        padding: 10px 5px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 8px;
+    }
+    
+    .statemet-summery {
+        margin-top: 5px;
+    }
+    
+    .statemet-summery .ac-details {
+        margin-top: 15px;
+    }
+    
+    .ac-summery>div {
+        background-color: #e6e6e6;
+        padding: 6px;
+        font-weight: 600;
+    }
+    
+    .ac-summery {
+        display: grid
+        ;
+            grid-template-columns: 50% 30% 19.3%;
+            column-gap: .35%;
+            margin-top: 5px;
+       
+    }.account-balance {
+        text-align: end;
+    }.nomonation {
+        text-align: center;
+    }.ac-summery-report>div {
+        background-color: transparent;
+        padding: 6px;
+        font-weight: 500;
+    }.total-area {
+        display: flex
+    ;
+        background-color: #e6e6e6;
+        padding: 5px;
+        font-weight: 600;
+        justify-content: space-between;
+    }.total-area>div {
+        width: 50%;
+    }.total-ammount{
+        text-align: center;
+    }.note-area {
+        margin: 15px 0;
+    }
+    
+    .statement {
+        font-size: 13px;
+        margin-left: 5px;
+    }td.table-date,td.table-mode,td.table-modes {
+        text-align: start !important;
+    }   
+    td.table-deposits,td.table-withdrawals,td.table-withdrawals {
+        text-align: end;
+    }
+    td.table-balance {
+        text-align: end;
+    }
+     
+    tbody#table-body {
+        font-size: 10px;
+    }
+    ul{
+        list-style: none;
+    }
+    .ul-header{
+        display: flex;
+     
+        column-gap: 5px;
+    }
+    .ul-header li{
+        background-color:#e6e6e6;
+    }.table-head {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }   
+    li.table-date{
+     
+        padding: 7px;
+    }
+     
+    ul.ul-header li {
+        padding: 5px 0;
+        font-weight: 600;
+        font-size:10px;
+    }
+    /* thead.head-main{
+        display: none;
+    } */
+     
+    td.table-particulars{
+      
+        padding: 8px 5px;
+    }
+    tr.table-header.table-heade{
+        padding: 5px 0;
+        font-weight: 600;
+        font-size: 10px;
+    }
+    
+    /* width */
+    .table-date {
+       
+        width: 10%;
+        text-align: left;
+    }.table-modes {
+     
+        width: 12%;
+        text-align: left;
+    }
+    .table-balance,.table-deposits {
+     
+        width: 13%;
+        text-align: right;
+    }
+    .table-withdrawals {
+      
+        width: 17%;
+        text-align: right;
+    }
+    .table-particulars {
+       
+        width: 35%;
+        text-align: left;
+    }
+    
+}

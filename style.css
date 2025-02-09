@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+ 
 }
 
 * {
@@ -59,7 +59,7 @@ td {
 }
 
 .main-content {
-    border: 1px solid red;
+   
     padding-left: 15px;
     padding-right: 2px;
 }
@@ -75,7 +75,9 @@ p {
 .left-bottom strong {
     font-size: 11px;
 }
-
+.statement strong{
+    font-size: 11px;
+}
 .left-bottom {
     margin-top: 30px;
 }
@@ -218,11 +220,11 @@ tr.table-header.table-heade{
 }
 .table-withdrawals {
   
-    width: 14%;
+    width: 17%;
     text-align: right;
 }
 .table-particulars {
    
-    width: 38%;
+    width: 35%;
     text-align: left;
 }
