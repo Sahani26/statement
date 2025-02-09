@@ -17,7 +17,7 @@ table {
 th,
 td {
     
-    padding: 8px;
+    padding: 8px 1px;
    
 }
 /* table {
@@ -59,8 +59,9 @@ td {
 }
 
 .main-content {
-    padding: 0 20px;
     border: 1px solid red;
+    padding-left: 15px;
+    padding-right: 2px;
 }
 
 p {
@@ -116,10 +117,12 @@ p {
 }
 
 .ac-summery {
-    display: grid;
-    grid-template-columns: 50% 30% 20%;
-    column-gap: 5px;
-    margin-top: 5px;
+    display: grid
+    ;
+        grid-template-columns: 50% 30% 19.3%;
+        column-gap: .35%;
+        margin-top: 5px;
+   
 }.account-balance {
     text-align: end;
 }.nomonation {
@@ -168,7 +171,7 @@ th.table-balance{
     width: 12%; 
 }
 tbody#table-body {
-    font-size: 12px;
+    font-size: 10px;
 }
 ul{
     list-style: none;
@@ -186,7 +189,7 @@ ul{
     margin-top: 10px;
 }   
 li.table-date{
-    width: 7%;
+    width: 10%;
     padding: 7px;
 }li.table-modes {
     width: 14%;
@@ -198,32 +201,31 @@ li.table-withdrawals{
     width: 17%;
 }
 li.table-particulars{
-    width: 32%;
+    width: 25%;
 }ul.ul-header li {
-    padding: 7px;
+    padding: 5px 0;
     font-weight: 600;
     font-size:10px;
 }
 thead.head-main{
     display: none;
 }
-
+li.table-particulars{
+    width: 32%;
+}
 /* width */
 td.table-date{
-    width: 7%;
+    width: 12%;
 }
 td.table-modes{
-    width: 14%; 
+    width: 12%; 
 }
 td.table-deposits,td.table-balance{
     width: 15%;
 }
 td.table-withdrawals{
-    width: 17%;
+    width: 15%;
 }
 td.table-particulars{
-    width: 32%;
-}
-li.table-particulars{
-    width: 32%;
+    width: 31%;
 }
