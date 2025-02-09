@@ -1,5 +1,7 @@
 @media print {
- 
+    body{
+      
+    }
    
 }
 @media (max-width:600px) {
