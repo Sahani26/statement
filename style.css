@@ -167,7 +167,7 @@ th.table-balance{
     width: 12%; 
 }
 tbody#table-body {
-    font-size: 14px;
+    font-size: 12px;
 }
 ul{
     list-style: none;
@@ -175,13 +175,14 @@ ul{
 .ul-header{
     display: flex;
  
-    column-gap: 10px;
+    column-gap: 5px;
 }
 .ul-header li{
     background-color:#e6e6e6;
 }.table-head {
-    width: 98.5%;
+    width: 100%;
     margin: auto;
+    margin-top: 10px;
 }   
 li.table-date{
     width: 7%;
@@ -200,8 +201,28 @@ li.table-particulars{
 }ul.ul-header li {
     padding: 7px;
     font-weight: 600;
-    font-size:13px;
+    font-size:10px;
 }
 thead.head-main{
     display: none;
+}
+
+/* width */
+td.table-date{
+    width: 7%;
+}
+td.table-modes{
+    width: 14%; 
+}
+td.table-deposits,td.table-balance{
+    width: 15%;
+}
+td.table-withdrawals{
+    width: 17%;
+}
+td.table-particulars{
+    width: 32%;
+}
+li.table-particulars{
+    width: 32%;
 }
