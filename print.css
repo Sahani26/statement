@@ -1,7 +1,11 @@
 @media print {
-    body{
-      
-    }
+   .main_header{
+    margin-left: 15px;
+    width: 100%;
+   }
+   .downloadexel{
+    display: none;
+   }
    
 }
 @media (max-width:600px) {

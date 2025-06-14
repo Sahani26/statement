@@ -98,6 +98,9 @@
     </header>
     
    <!-- data table -->
+   <div class="downloadexel">
+     <input type="file" id="upload" accept=".xlsx, .xls, .csv" />
+   </div>
     <div class="data-area">
         <table class="header-table">
             <thead class="head-main">
@@ -131,7 +134,7 @@
      
     </div>
 </div>
-    <script>
+    <!-- <script>
         const transactions = [
         {
   "date": "2025-02-01",
@@ -164,7 +167,39 @@
         }
 
         window.onload = loadTableData;
-    </script>
+    </script> -->
+    
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+document.getElementById('upload').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const data = new Uint8Array(e.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+        const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        const transactions = XLSX.utils.sheet_to_json(sheet);
+
+        const tableBody = document.getElementById("table-body");
+        tableBody.innerHTML = ""; // clear old data
+
+        transactions.forEach(tran => {
+            let row = `<tr class="table-heade-content">
+                <td class="table-date">${tran.DATE || ''}</td>
+                <td class="table-modes">${tran.MODE || ''}</td>
+                <td class="table-particulars">${tran.PARTICULARS || ''}</td>
+                <td class="table-deposits">${tran.DEPOSITS || 0}</td>
+                <td class="table-withdrawals">${tran.WITHDRAWALS || 0}</td>
+                <td class="table-balance">${tran.BALANCE || 0}</td>
+            </tr>`;
+            tableBody.innerHTML += row;
+        });
+    };
+    reader.readAsArrayBuffer(file);
+});
+</script>
 </body>
 
 </html>

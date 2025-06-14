@@ -29,6 +29,17 @@ td {
     background-color: #e6e6e6;
 }
 .table-heade-content{
+    /* border-bottom: 1px solid #e6e6e6; */
+    position: relative;
+}
+.table-heade-content::after {
+  content: '';
+    height: 1px;
+    margin: 4px 0;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
     border-bottom: 1px solid #e6e6e6;
 }
 
