@@ -34,8 +34,7 @@ td {
 }
 .table-heade-content::after {
   content: '';
-    height: 1px;
-    margin: 4px 0;
+    height: 1px; 
     position: absolute;
     width: 100%;
     right: 0;
